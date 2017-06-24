@@ -1,3 +1,14 @@
+@import '_nav';
+@import '_variables';
+
 body {
-  background-color: red;
+  margin:0;
+  margin-top:5px;
+  border-top:5px solid $oddchecker-orange;
+  background-color: $oddchecker-bg;
+}
+
+.mainContainer {
+  padding-left: 20px;
+  padding-right: 20px;
 }

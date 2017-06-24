@@ -9,7 +9,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      appStyles: path.resolve(__dirname, './app/styles/app.scss')
+      appStyles: path.resolve(__dirname, './app/styles/app.scss'),
+      Main: path.resolve(__dirname, './app/components/Main.jsx'),
+      Nav: path.resolve(__dirname, './app/components/Nav.jsx')
     },
     extensions: ['.js', '.jsx'],
   },
@@ -22,6 +24,10 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules)/
+      },
+      { 
+        test: /\.(png|jpg)$/, 
+        loader: 'url-loader' 
       }
     ]
   }

@@ -1,0 +1,37 @@
+@import '_variables';
+
+nav {
+  .logo {
+    width: 250px;
+    display: inline-block;
+    float: left;
+    img {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  ul {
+    display: inline-block;
+    float: left;
+    li {
+      display: inline-block;
+      list-style-type: none;
+      padding-left:15px;
+      padding-right:15px;
+      position: relative;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .separator {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 2px;
+        display: inline-block;
+        background-color: #735b27;
+        margin-right: -1px;
+      }
+    }
+  }
+}
