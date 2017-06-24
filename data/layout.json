@@ -1,0 +1,59 @@
+{
+  "navigation": {
+    "sportLinks": [
+      {
+        "name": "Futbol",
+        "categoryGroupName": "football",
+        "url": "futbol"
+      },
+      {
+        "name": "Tenis",
+        "categoryGroupName": "tennis",
+        "url": "tenis"
+      },
+      {
+        "name": "Baloncesto",
+        "categoryGroupName": "basketball",
+        "url": "baloncesto"
+      }
+    ],
+    "headerLinks": [
+      {
+        "name": "Bonos",
+        "url": "bonos"
+      },
+      {
+        "name": "Pronosticos",
+        "url": "pronosticos"
+      }
+    ],
+    "footerLinks": [
+      {
+        "name": "Quienes Somos ",
+        "url": "quienes-somos"
+      },
+      {
+        "name": "Términos y Condiciones",
+        "url": "terminos-y-condiciones"
+      },
+      {
+        "name": "Política de Cookies y Privacidad",
+        "url": "privacidad-politica-de-cookies"
+      },
+      {
+        "name": "Descarga el App",
+        "url": "download"
+      }
+    ],
+    "marketLinks": [
+      {
+        "name": "Ganador",
+        "url": "ganador"
+      },
+      {
+        "name": "Empate no Apuesta",
+        "url": "empate-no-apuesta"
+      }
+    ]
+  }
+}
