@@ -15,6 +15,14 @@ class Nav extends Component {
     this.setState({
       showHideMenu: burgerMenuClass
     });
+    let el = document.body;
+    if (el.classList) {
+      el.classList.remove('menuHidden', 'menuVisible');
+      el.classList.add(burgerMenuClass);
+    }
+    else {
+      el.className = className;
+    }
   }
 
   render() {

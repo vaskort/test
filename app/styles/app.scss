@@ -16,6 +16,9 @@ body {
   margin-top:5px;
   border-top:5px solid $oddchecker-orange;
   background-color: $oddchecker-bg;
+  &.menuVisible {
+    overflow: hidden;
+  }
 }
 
 .mainContainer {
