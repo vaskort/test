@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Logo from "../assets/oc-logo.png";
-import { transformicons } from "burgerIcon";
 import { default as classNames } from 'classnames';
 
 class Nav extends Component {
