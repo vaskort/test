@@ -1,0 +1,32 @@
+@import '_variables';
+
+footer {
+  color: #fff;
+  float: left;
+  width: 100%;
+  background-color: $oddchecker-border-blue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top:2px solid #707886;
+  ul {
+    li {
+      display: inline-block;
+      float: left;
+      width: 25%;
+      @include maxTablet {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        @include transition(0.3s);
+        &:hover, &:focus {
+          color: $oddchecker-orange;
+        }
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@ module.exports = {
       MatchView: path.resolve(__dirname, './app/components/MatchView.jsx'),
       NonMatchView: path.resolve(__dirname, './app/components/NonMatchView.jsx'),
       Background: path.resolve(__dirname, './app/components/Background.jsx'),
+      Footer: path.resolve(__dirname, './app/components/Footer.jsx'),
       layoutData: path.resolve(__dirname, './data/layout.json'),
       marketsData: path.resolve(__dirname, './data/markets.json')
     },
