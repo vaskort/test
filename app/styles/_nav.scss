@@ -37,6 +37,7 @@ header {
         z-index: 10;
         background-color: $oddchecker-bg;
         height: 100vh;
+        overflow: auto;
       }
       @include minTablet {
         visibility: visible!important;
