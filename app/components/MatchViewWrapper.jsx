@@ -10,28 +10,21 @@ class MatchViewWrapper extends Component {
   constructor() {
     super();
     this.state = {
-      tabShown: marketsData.marketData.markets.name,
-      firstClicked: false
+      tabShown: '',
+      firstClicked: false,
+      tabType: 'match'
     };
-  }
-
-  componentDidMount() {
-    // lets find the first object and set the name to tabShown property so we have an active item
-    for (var key in marketsData.marketData.markets) {
-        console.log(marketsData.marketData.markets[key].name);
-        i++;
-    }
   }
 
   handleChange(e) {
     this.setState({
       tabShown: e.target.dataset.name,
-      firstClicked: true
+      firstClicked: true,
+      tabType: e.target.dataset.type
     });
   }
 
   render() {
-    console.log(this.state);
     let bets = [];
     let betViews = [];
     let i = 0;
@@ -41,10 +34,13 @@ class MatchViewWrapper extends Component {
         <li
           key={i}
           data-name={marketsData.marketData.markets[key].name}
+          data-type={marketsData.marketData.markets[key].type}
           onClick={this.handleChange.bind(this)}
           className={classNames({
             active:
-              this.state.tabShown === marketsData.marketData.markets[key].name || i === 0 && this.state.firstClicked === false
+              this.state.tabShown ===
+                marketsData.marketData.markets[key].name ||
+                (i === 0 && this.state.firstClicked === false)
           })}
         >
           {marketsData.marketData.markets[key].name}
@@ -59,7 +55,8 @@ class MatchViewWrapper extends Component {
               className={classNames({
                 active:
                   this.state.tabShown ===
-                    marketsData.marketData.markets[key].name || i === 0 && this.state.firstClicked === false
+                    marketsData.marketData.markets[key].name ||
+                    (i === 0 && this.state.firstClicked === false)
               })}
             >
               <MatchView bets={marketsData.marketData.markets[key].bets} />
@@ -72,7 +69,7 @@ class MatchViewWrapper extends Component {
                     marketsData.marketData.markets[key].name || i === 0
               })}
             >
-              {" "}<NonMatchView />{" "}
+              <NonMatchView bets={marketsData.marketData.markets[key]} />
             </li>
       );
       i++;
@@ -86,7 +83,8 @@ class MatchViewWrapper extends Component {
           </ul>
         </div>
         <div className="tabWrapper">
-          <Background teamData={marketsData.marketData.banner} />
+          {/*I will pass to the Background component the matchViewVisible so I can make the necessary styling changes*/}
+          <Background teamData={marketsData.marketData.banner} matchTypeVisible={this.state.tabType}/>
           <ul>
             {betViews}
           </ul>

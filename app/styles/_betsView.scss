@@ -14,27 +14,45 @@
     width: 100%;
     background-color: $oddchecker-bg;
     li {
-    float: left;
-    width: 33.33333333%;
-    text-align: center;
-    border-left: 3px solid;
-    border-right: 3px solid;
-    border-color: $oddchecker-border-blue;
-    background-color: $oddchecker-bg;
-    padding: 3px;
-    .name {
-      color:#fff;
-      display: inline-block;
-      width: 100%;
-      padding-top: 3px;
-      padding-bottom: 3px;
-    }
-    .bestOddsDecimal {
-      color: $oddchecker-orange;
-      display: inline-block;
-      width: 100%;
-      font-size: 11px;
+      float: left;
+      width: 33.33333333%;
+      text-align: center;
+      border-left: 3px solid;
+      border-right: 3px solid;
+      border-color: $oddchecker-border-blue;
+      background-color: $oddchecker-bg;
+      padding: 3px;
+      .name {
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+      .bestOddsDecimal {
+        color: $oddchecker-orange;
+        display: inline-block;
+        width: 100%;
+        font-size: 11px;
+      }
     }
   }
+  &.nonMatchView {
+    li {
+      width: 50%;
+    }
   }
+}
+.nonMatchName {
+  display: block;
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  background-color: $oddchecker-lighter-blue;
+  padding: 8px 15px;
+  border-top: 2px solid;
+  border-color: $oddchecker-orange;
+  margin-top: 20px;
 }
