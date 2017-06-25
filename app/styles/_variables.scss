@@ -1,3 +1,24 @@
 // variables
 $oddchecker-orange: #ffc952;
 $oddchecker-bg: #12161e;
+
+// mixins
+@mixin transition($transition) {
+	   -webkit-transition: $transition;
+     transition: $transition;
+}
+
+// media queries
+@mixin maxTablet {
+  @media all and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin minTablet {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+

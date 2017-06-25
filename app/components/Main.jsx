@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Nav from 'Nav';
+import React, { Component } from "react";
+import Nav from "Nav";
 
 class Main extends Component {
   render() {

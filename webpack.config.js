@@ -11,7 +11,8 @@ module.exports = {
     alias: {
       appStyles: path.resolve(__dirname, './app/styles/app.scss'),
       Main: path.resolve(__dirname, './app/components/Main.jsx'),
-      Nav: path.resolve(__dirname, './app/components/Nav.jsx')
+      Nav: path.resolve(__dirname, './app/components/Nav.jsx'),
+      burgerIcon: path.resolve(__dirname, './app/transformicons.js')
     },
     extensions: ['.js', '.jsx'],
   },
