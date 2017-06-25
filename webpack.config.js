@@ -14,6 +14,7 @@ module.exports = {
       Nav: path.resolve(__dirname, './app/components/Nav.jsx'),
       MatchViewWrapper: path.resolve(__dirname, './app/components/MatchViewWrapper.jsx'),
       MatchView: path.resolve(__dirname, './app/components/MatchView.jsx'),
+      NonMatchView: path.resolve(__dirname, './app/components/NonMatchView.jsx'),
       Background: path.resolve(__dirname, './app/components/Background.jsx'),
       burgerIcon: path.resolve(__dirname, './app/transformicons.js'),
       layoutData: path.resolve(__dirname, './data/layout.json'),

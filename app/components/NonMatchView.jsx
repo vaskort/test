@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class MatchView extends Component {
+class NonMatchView extends Component {
   render() {
     return (
       <div>
-        test
+        Non Match View
       </div>
     );
   }
 }
 
-export default MatchView;
+export default NonMatchView;
