@@ -3,9 +3,8 @@ import layoutData from "layoutData";
 
 class Footer extends Component {
   render() {
-    console.log(layoutData);
     let footerLinks = layoutData.navigation.footerLinks.map((link, index) => 
-      <li><a href={link.url}>{link.name}</a></li>
+      <li key={index}><a key={index} href={link.url}>{link.name}</a></li>
     );
 
     return (

@@ -23,6 +23,8 @@ header {
       display: inline-block;
       float: left;
       padding-left: 30px;
+      visibility: visible;
+      opacity: 1;
       @include transition(0.3s);
       @include maxTablet {
         position: absolute;
@@ -30,12 +32,14 @@ header {
         left:0;
         padding-left:0;
         visibility: hidden;
+        opacity: 0;
         z-index: 10;
         background-color: $oddchecker-bg;
         height: 100vh;
       }
       @include minTablet {
         visibility: visible!important;
+        opacity: 1!important;
       }
       li {
         display: inline-block;
@@ -97,6 +101,7 @@ header {
     nav {
       ul {
         visibility: hidden;
+        opacity: 0;
       }
     }
   }
@@ -105,6 +110,7 @@ header {
       ul {
         @include maxTablet {
           visibility: visible;
+          opacity: 1;
         }
       }
     }
