@@ -12,7 +12,8 @@ module.exports = {
       appStyles: path.resolve(__dirname, './app/styles/app.scss'),
       Main: path.resolve(__dirname, './app/components/Main.jsx'),
       Nav: path.resolve(__dirname, './app/components/Nav.jsx'),
-      burgerIcon: path.resolve(__dirname, './app/transformicons.js')
+      burgerIcon: path.resolve(__dirname, './app/transformicons.js'),
+      layoutData: path.resolve(__dirname, './data/layout.json')
     },
     extensions: ['.js', '.jsx'],
   },

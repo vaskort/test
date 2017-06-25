@@ -1,5 +1,7 @@
 @import '_nav';
 @import '_variables';
+@import '_reset';
+
 
 body {
   margin:0;
@@ -11,4 +13,6 @@ body {
 .mainContainer {
   padding-left: 20px;
   padding-right: 20px;
+  float: left;
+  width: 100%;
 }
