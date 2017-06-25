@@ -38,5 +38,13 @@
     width: calc(100% - 200px);
     float: left;
     padding-left: 20px;
+    > ul {
+      > li {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,40 @@
+@import '_variables';
+
+.betsWrapper {
+  float: left;
+  width: 100%;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-style: solid;
+  border-color: $oddchecker-border-blue;
+  ul {
+    float: left;
+    width: 100%;
+    background-color: $oddchecker-bg;
+    li {
+    float: left;
+    width: 33.33333333%;
+    text-align: center;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-color: $oddchecker-border-blue;
+    background-color: $oddchecker-bg;
+    padding: 3px;
+    .name {
+      color:#fff;
+      display: inline-block;
+      width: 100%;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+    .bestOddsDecimal {
+      color: $oddchecker-orange;
+      display: inline-block;
+      width: 100%;
+      font-size: 11px;
+    }
+  }
+  }
+}

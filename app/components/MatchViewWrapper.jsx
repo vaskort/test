@@ -8,8 +8,6 @@ import NonMatchView from "NonMatchView";
 
 class MatchViewWrapper extends Component {
   render() {
-    console.log(marketsData.marketData.markets);
-
     let bets = [];
     let betViews = [];
     let i = 0;
