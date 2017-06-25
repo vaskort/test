@@ -3,8 +3,9 @@ import { default as classNames } from 'classnames';
 
 import marketsData from 'marketsData';
 import Background from 'Background';
+import MatchView from 'MatchView';
 
-class MatchView extends Component {
+class MatchViewWrapper extends Component {
   render() {
     console.log(marketsData.marketData.markets);
     let bets = [];
@@ -24,6 +25,7 @@ class MatchView extends Component {
           <Background teamData={marketsData.marketData.banner} />
           <ul>
             <li className="active">
+              <MatchView />
             </li>
             <li></li>
           </ul>
@@ -33,4 +35,4 @@ class MatchView extends Component {
   }
 }
 
-export default MatchView;
+export default MatchViewWrapper;
