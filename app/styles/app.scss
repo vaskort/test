@@ -1,6 +1,12 @@
 @import '_nav';
 @import '_variables';
 @import '_reset';
+@import '_tabsWrapper';
+@import '_background';
+
+* {
+  box-sizing: border-box;
+}
 
 
 body {
@@ -13,6 +19,10 @@ body {
 .mainContainer {
   padding-left: 20px;
   padding-right: 20px;
-  float: left;
-  width: 100%;
+  width: 991px;
+  margin-left: auto;
+  margin-right: auto;
+  @include maxSmall {
+    width: 100%;
+  }
 }

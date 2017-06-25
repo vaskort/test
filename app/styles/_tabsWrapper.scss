@@ -1,0 +1,42 @@
+@import '_variables';
+
+.tabsWrapper {
+  float: left;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+  .tabLinksWrapper {
+    float: left;
+    ul {
+      float: left;
+      width: 200px;
+      li {
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding:15px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        background-color: $oddchecker-lighter-blue;
+        border: 1px solid;
+        border-color: $oddchecker-lighter-blue;
+        border-radius: 2px;
+        cursor: pointer;
+        text-transform: uppercase;
+        @include transition(0.3s);
+        &.active, &:hover {
+          border: 1px solid;
+          border-color: $oddchecker-orange;
+          background-color: $oddchecker-bg;
+        }
+      }
+    }
+  }
+  .tabWrapper {
+    width: calc(100% - 200px);
+    float: left;
+    padding-left: 20px;
+  }
+}

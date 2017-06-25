@@ -19,7 +19,6 @@ class Nav extends Component {
   }
 
   render() {
-    console.log(this.props.data);
     let sportsLinks = this.props.data.navigation.sportLinks.map((link, index) => 
       <li key={index}>
         <a href={link.url}>{link.name}</a>

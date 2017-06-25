@@ -12,8 +12,11 @@ module.exports = {
       appStyles: path.resolve(__dirname, './app/styles/app.scss'),
       Main: path.resolve(__dirname, './app/components/Main.jsx'),
       Nav: path.resolve(__dirname, './app/components/Nav.jsx'),
+      MatchViewWrapper: path.resolve(__dirname, './app/components/MatchViewWrapper.jsx'),
+      Background: path.resolve(__dirname, './app/components/Background.jsx'),
       burgerIcon: path.resolve(__dirname, './app/transformicons.js'),
-      layoutData: path.resolve(__dirname, './data/layout.json')
+      layoutData: path.resolve(__dirname, './data/layout.json'),
+      marketsData: path.resolve(__dirname, './data/markets.json')
     },
     extensions: ['.js', '.jsx'],
   },

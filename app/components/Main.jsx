@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from "Nav";
+import MatchViewWrapper from "MatchViewWrapper";
 
 import layoutData from 'layoutData';
 
@@ -8,6 +9,7 @@ class Main extends Component {
     return (
       <div className="mainContainer">
         <Nav data={layoutData} />
+        <MatchViewWrapper />
       </div>
     );
   }
